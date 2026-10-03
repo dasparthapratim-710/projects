@@ -1,0 +1,20 @@
+{
+  "name": "codetest-agentic-test-generator",
+  "version": "1.0.0",
+  "description": "CodeTest - Agentic AI Test Suite Generator & Migration Tool Audit System",
+  "main": "engine/agent_loop.js",
+  "type": "module",
+  "scripts": {
+    "agent:run": "node engine/agent_loop.js",
+    "agent:gdrive": "node engine/agent_loop.js sample-codebase/tools/gdrive_discovery.js",
+    "agent:onedrive": "node engine/agent_loop.js sample-codebase/tools/onedrive_migration.js",
+    "dev": "cd web && npm run dev"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": ["ai-agent", "codetest", "migration-tools", "ast-parser", "jest-generator"],
+  "author": "Partha",
+  "license": "MIT"
+}
